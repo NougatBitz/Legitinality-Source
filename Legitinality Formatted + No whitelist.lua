@@ -139,7 +139,7 @@ if data.StatusCode == 200 then
         local GarageButton = Instance.new("TextButton")
         local VibeLiftButton = Instance.new("TextButton")
 
-        syn.protect_gui(ScreenGui)
+        if syn then syn.protect_gui(ScreenGui) end
         ScreenGui.Parent = game.CoreGui
         ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
@@ -575,7 +575,7 @@ if data.StatusCode == 200 then
 
         --Properties:
 
-        syn.protect_gui(ScreenGui)
+        if syn then syn.protect_gui(ScreenGui) end
         ScreenGui.Parent = game.CoreGui
         ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
